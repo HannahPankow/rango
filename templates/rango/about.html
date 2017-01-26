@@ -13,16 +13,17 @@
     </head>
 
     <body>
-        <h1>Rango says...</h1>
+        <h1>Hannah says...</h1>
         <div>
-                hey there partner! <br />
+                FUN FUN FUN! <br />
                 <strong>{{ boldmessage }}</strong><br />
         </div>
         <div>
-            <a href="/rango/about/">About</a><br />
+            <a href="/rango/index/">Index</a><br />
 			<!-- Image -->
-			<img src= "{% static "images/rango.jpg" %}"	<!-- static template tag: show image located in static media directory given-->
-				 alt="Picture of Rango" /> 
+			<img src= "{% static "images/about.jpg" %}"	<!-- static template tag: show image located in static media directory given-->
+				 alt="static cat" /> 
+			<img src="{{ MEDIA_URL}}cat.jpg">
         </div>
 
     </body>
