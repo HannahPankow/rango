@@ -28,6 +28,9 @@ STATIC_DIR = os.path.join(BASE_DIR, 'static')
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
+#Media directory for dynamic files
+MEDIA_DIR = os.path.join(BASE_DIR, 'media')
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '=pxjf&50zk^r_zawch)4+r$91g%%ux4f9jrm7$n7-i^ai0^)ih'
 
@@ -72,6 +75,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+				'django.template.context_processors.media'
             ],
         },
     },
@@ -129,3 +133,7 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+#two variables will be picked up and used by Django to set up media file hosting
+MEDIA_ROOT = MEDIA_DIR
+MEDIA_URL = '/media/'
