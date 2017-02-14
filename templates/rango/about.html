@@ -1,19 +1,18 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}	<!-- informs Django's template engine that we will be using static files within the template -->
 
-<html>
 
-    <head>
-        <title>Rango</title>
+{% block title %}About{% endblock %}
+   
 		<!-- CSS -->
-		<link rel= "stylesheet" href="{% static "css/base.css" %}" />
+		<!--link rel= "stylesheet" href="{% static "css/base.css" %}" /-->
 		<!-- JavaScript -->
-		<script src="{% static "js/jquery.js" %}"></script>
-    </head>
+		<!--script src="{% static "js/jquery.js" %}"></script-->
 
-    <body>
-        <h1>Hannah says...</h1>
+
+    {% block body_block %}
+        <h1>About Rango</h1>
+		This is <strong> Rango's about page</strong><br/>
         <div>
                 FUN FUN FUN! <br />
                 <strong>{{ boldmessage }}</strong><br />
@@ -25,7 +24,5 @@
 				 alt="static cat" /> 
 			<img src="{{ MEDIA_URL}}cat.jpg">
         </div>
+{% endblock %}
 
-    </body>
-
-</html>
