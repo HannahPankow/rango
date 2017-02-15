@@ -137,3 +137,6 @@ STATIC_URL = '/static/'
 #two variables will be picked up and used by Django to set up media file hosting
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
+
+LOGIN_URL = '/rango/login/'
