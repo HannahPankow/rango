@@ -18,11 +18,12 @@
                 <strong>{{ boldmessage }}</strong><br />
         </div>
         <div>
-            <a href="/rango/index/">Index</a><br />
+            <!--a href="/rango/index/">Index</a><br /-->
 			<!-- Image -->
-			<img src= "{% static "images/about.jpg" %}"	<!-- static template tag: show image located in static media directory given-->
-				 alt="static cat" /> 
+			<img src= "{% static "images/about.jpg" %}" img alt="static cat" />	<!-- static template tag: show image located in static media directory given-->
 			<img src="{{ MEDIA_URL}}cat.jpg">
         </div>
+		
+<p> You have visited this site {{ visits }} times</p-->
 {% endblock %}
 

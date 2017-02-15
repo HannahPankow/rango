@@ -9,7 +9,7 @@
 		<!--link rel= "stylesheet" href="{% static "css/base.css" %}" /-->
 		<!-- JavaScript -->
 		<!--script src="{% static "js/jquery.js" %}"></script-->
-   
+		
 
         <h1>Rango says...</h1>
         {% if user.is_authenticated %}
@@ -55,4 +55,6 @@
 			<!-- Image -->
 			<img src= "{% static "images/rango2.jpg" %}" img alt="Picture of Rango"/> 	<!-- static template tag: show image located in static media directory given-->
         </div>
+		
+ <!--p> visits: {{ visits }}</p-->
 {% endblock %}
