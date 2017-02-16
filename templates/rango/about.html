@@ -12,7 +12,7 @@
 
     {% block body_block %}
         <h1>About Rango</h1>
-		This is <strong> Rango's about page</strong><br/>
+		Rango says here is the about page
         <div>
                 FUN FUN FUN! <br />
                 <strong>{{ boldmessage }}</strong><br />
@@ -20,10 +20,10 @@
         <div>
             <!--a href="/rango/index/">Index</a><br /-->
 			<!-- Image -->
-			<img src= "{% static "images/about.jpg" %}" img alt="static cat" />	<!-- static template tag: show image located in static media directory given-->
+			<img src="{% static "images/about.jpg" %}" img alt="static cat" />	<!-- static template tag: show image located in static media directory given-->
 			<img src="{{ MEDIA_URL}}cat.jpg">
         </div>
 		
-<p> You have visited this site {{ visits }} times</p-->
+<p> visits: {{ visits }}</p-->
 {% endblock %}
 
